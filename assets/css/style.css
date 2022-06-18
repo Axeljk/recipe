@@ -5,13 +5,9 @@
 	padding: 0px;
 }
 
-body {
+main {
 	background: #eeeee6;
 	color: #303030;
-	height: 100%;
-}
-
-main {
 	padding-left: 10%;
 	border-color: black;
 	max-height: 85vh;
@@ -50,6 +46,7 @@ header {
 	display: flex;
 	align-items: center;
 	border-color: white;
+	width: 100%;
 }
 
 .italic {
@@ -77,7 +74,6 @@ h2 {
 	margin-bottom: 0.7em;
 }
 
-/* list of ingredients */
 ul {
 	list-style-type: none;
 }
@@ -89,8 +85,37 @@ li:before {
 	padding: 0 1em;
 }
 
-/* Instructions */
 p {
 	line-height: 2.25em;
 	padding-left: 2em;
+}
+
+@media screen and (max-width: 1200px) {
+	main {
+		padding-left: 0;
+		grid-template-areas:
+			"figure"
+			"section"
+			"section2";
+	}
+	figure {
+		margin: 10%;
+	}
+	h1, h2 {
+		text-align: center;
+	}
+	h2 {
+		margin: 5%;
+	}
+	li, p {
+		margin: 0 5vw;
+	}
+	li {
+		padding-left: 15vw;
+		text-indent: -15vw;
+	}
+	p {
+		padding-left: 5vw;
+		text-indent: -5vw;
+	}
 }
