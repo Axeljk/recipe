@@ -11,29 +11,25 @@ body {
 }
 
 main {
-	padding-left: 2em;
-	padding: 0 10%;
+	padding-left: 10%;
 	border-color: black;
+	padding-bottom: 10vh;
+	height: 800px;
+	max-width: 100%;
 	display: flex;
 	flex-flow: column wrap;
-	justify-content: flex-start;
-	flex-direction: column;
-	height: 700px;
-	align-content: flex-start;
 }
 
 section {
-	flex: 1 1 40%;
+	flex-basis: 50%;
 }
 figure {
-	margin: auto 1em;
-	flex-grow: 1;
-	flex-shrink: 1;
-	flex-basis: 100%;
-	page-break-before: always;
+	align-self: center;
+	padding-top: 5%;
+	max-width: 40%;
 }
 img {
-	max-width: 40%;
+	max-width: 100%;
 }
 
 header {
